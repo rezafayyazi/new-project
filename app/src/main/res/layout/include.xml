@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textColor="@color/colorbanafsh"
+        android:layout_width="130sp"
+        android:layout_height="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="2dp"
+        android:gravity="center_vertical"
+        android:text="عطار باشی نوین"
+        android:textSize="20sp" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_android_black_24dp"
+        />
+
+</LinearLayout>

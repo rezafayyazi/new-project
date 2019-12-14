@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout1"
+    tools:openDrawer="end"
+    android:background="@color/colorAccent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+android:id="@+id/consnew3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new3"
+    android:visibility="visible"
+    android:background="@color/colorAccent"
+    >
+
+    <include
+        android:visibility="visible"
+        layout="@layout/nnnn"
+        android:id="@+id/incloudtool"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <include
+        android:visibility="gone"
+        layout="@layout/backsearchview"
+        android:id="@+id/incloudsearch"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:itemIconSize="25sp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/items" />
+
+    <include
+        layout="@layout/activity_main"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incloudtool" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/dddd"
+        android:layout_width="300dp"
+        android:layoutDirection="rtl"
+        android:layout_gravity="end"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorAccent"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/nav_header_main2"
+        app:menu="@menu/main2"
+         />
+    </androidx.drawerlayout.widget.DrawerLayout>
